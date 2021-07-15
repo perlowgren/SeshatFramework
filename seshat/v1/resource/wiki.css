@@ -1,0 +1,332 @@
+
+.wiki p {
+	line-height: 1.2em;
+	text-align: left;
+}
+
+.wiki pre {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background-color: #ddd;
+	padding: 1px;
+	overflow: auto;
+}
+
+.wiki code {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background-color: #ddd;
+	padding: 1px;
+}
+
+.wiki blockquote {
+	border: none;
+	border-left: 3px solid #99c;
+	margin-left: 0.5em;
+	margin-right: 0;
+	padding-left: 0.5em;
+	padding-right: 0;
+}
+
+.wiki blockquote > blockquote {
+	border-left: 3px solid #9c9;
+}
+
+.wiki blockquote > blockquote > blockquote {
+	border-left: 3px solid #c99;
+}
+
+.wiki blockquote > blockquote > blockquote blockquote {
+	border-left: 3px solid #cc9;
+}
+
+.wiki table {
+	border-collapse: separate;
+	margin-bottom: 1.4em;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.wiki tr {
+	display: table-row;
+}
+
+.wiki caption {
+	font-weight: bold;
+	text-align: center;
+	padding: 0.2em;
+	font-size: 105%;
+}
+
+.wiki th {
+	font-weight: bold;
+	background-color: #ddd;
+}
+
+.wiki th,
+.wiki td {
+	padding: 0.35em;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-right: none;
+	border-bottom: none;
+	vertical-align: top;
+}
+
+.wiki tr:first-child th,
+.wiki tr:first-child td {
+	border-top: none;
+}
+
+.wiki th:first-child,
+.wiki td:first-child {
+	border-left: none;
+}
+
+.wiki dt {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.5em;
+	margin-top: 1em;
+}
+
+.wiki dl,
+.wiki ul,
+.wiki ol {
+	margin-top: 0.6em;
+	margin-bottom: 1.3em;
+}
+
+.wiki li {
+	margin-bottom: 0.6em;
+}
+
+.wiki hr {
+	margin: 1em 0;
+}
+
+.wiki .img-center {
+	margin: 0.5em 0 1.3em 0;
+}
+
+.wiki .img-center div {
+	margin: 0 auto;
+}
+
+.wiki .thumb {
+	border: solid 1px #999;
+	padding: 2px;
+	text-align: center;
+}
+
+.wiki .thumb div {
+	font-size: 10px;
+	line-height: 11px;
+	text-align: left;
+	margin: 2px;
+}
+
+.wiki .thumb a {
+	font-size: 10px;
+}
+
+.wiki .thumb-left {
+	float: left;
+	margin: 0.5em 1.4em 1.3em 0;
+}
+
+.wiki .thumb-right {
+	float: right;
+	margin: 0.5em 0 1.3em 1.4em;
+}
+
+.wiki .doc {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-left: 2px;
+	background-image: url(icon/wiki-doc.png);
+}
+
+.wiki .doc-pdf {
+	display: inline-block;
+	height: 16px;
+	padding-right: 16px;
+	background: url(icon/wiki-doc-pdf.png) no-repeat right top;
+}
+
+.wiki .file {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-left: 2px;
+	background-image: url(icon/wiki-file.png);
+}
+
+.wiki a.ref sup {
+	font-size: 90%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+	top: -0.12em;
+}
+
+.wiki a.ref {
+	font-style: normal;
+	font-weight: normal;
+}
+
+.wiki a.ref:hover {
+	text-decoration: none;
+}
+
+.wiki ol.ref {
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+
+.wiki ol.ref li {
+	font-size: 0.8em;
+	line-height: 1.3em;
+	margin-bottom: 0.6em;
+}
+
+.wiki ol.ref li a {
+	font-size: 1em;
+	line-height: 1.3em;
+}
+
+.wiki p.poem {
+	font: italic 1em/1.2em Georgia,Times New Roman,Times,Serif;
+	letter-spacing: 0.08em;
+	margin: 2em 0 2em 1.2em;
+}
+
+.wiki ul.hiero {
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+	border: 0 none;
+	vertical-align: bottom;
+}
+
+.wiki ul.hiero,
+.wiki ul.hiero ul,
+.wiki ul.hiero li {
+	font-family: Times New Roman,Times,Serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 100%;
+	line-height: 1em;
+	text-decoration: none;
+	text-align: center;
+	margin: 0;
+}
+
+.wiki ul.hiero ul,
+.wiki ul.hiero li {
+	vertical-align: top;
+}
+
+.wiki ul.hiero ul {
+	padding: 0;
+}
+
+.wiki ul.hiero li {
+	display: block;
+	padding: 0 1px;
+	border: 0 none;
+}
+
+.wiki ul.hiero-ltr li {
+	float: left;
+}
+
+.wiki ul.hiero-rtl li {
+	float: right;
+}
+
+.wiki div.hiero-blank {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.wiki ul.hiero img {
+/*	image-rendering: -moz-crisp-edges;
+	image-rendering:   -o-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;*/
+	image-rendering: auto;
+/*	image-rendering: crisp-edges;*/
+	-ms-interpolation-mode: bicubic;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50%;
+	margin: 1px;
+}
+
+.wiki ul.hiero-subordinate > li {
+	margin: 1px;
+	display: block;
+	float: none;
+	margin: auto auto;
+	vertical-align: bottom;
+}
+
+.wiki ul.hiero-subordinate > li > img {
+	text-align: center;
+	vertical-align: middle;
+	display: block;
+	float: none;
+	line-height: 50%;
+	margin: 1px auto;
+}
+
+.wiki ul.hiero-juxtaposition > li {
+	display: inline-block;
+	float: none;
+	margin: auto auto;
+	vertical-align: bottom;
+}
+
+.wiki ul.hiero-juxtaposition > li > img {
+	text-align: center;
+	vertical-align: bottom;
+	display: block;
+	float: none;
+	line-height: 50%;
+	margin: auto 0;
+}
+
+.wiki div.hiero-cartouche-left-1,
+.wiki div.hiero-cartouche-left-2,
+.wiki div.hiero-cartouche-right-1,
+.wiki div.hiero-cartouche-right-2 {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	background-repeat: no-repeat;
+	vertical-align: top;
+}
+
+.wiki div.hiero-cartouche-left-1 > ul {
+	background-image: url(horus-hiero/cartouche-left-1.png);
+}
+.wiki div.hiero-cartouche-left-2 > ul {
+	background-image: url(horus-hiero/cartouche-left-2.png);
+}
+.wiki div.hiero-cartouche-right-1 {
+	background-image: url(horus-hiero/cartouche-right-1.png);
+}
+.wiki div.hiero-cartouche-right-2 {
+	background-image: url(horus-hiero/cartouche-right-2.png);
+}
+
+.wiki hr.hiero {
+	margin: 2px 0;
+	border-style: solid none;
+	border-width: 1px 0 0 0;
+	border-color: black black;
+}

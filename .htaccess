@@ -1,0 +1,27 @@
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(?!\/?seshat\/)\/?([\w\/\-\.]*\.(js|css|png|jpe?g|gif|svg|ico|zip|txt|html|ttf|eot|woff2?))$ /seshat/v1/resource/$1 [NC,L]
+
+RewriteRule ^\/?(ajax|test)\/([\w\-]+)\/?$ /seshat/v1/$1/$2.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(?!\/?seshat\/).* /seshat/v1/index.php [L]
+
+RewriteRule ^$ /seshat/v1/index.php [L]
+</IfModule>
+
+ErrorDocument 400 /seshat/v1/index.php?error=400
+ErrorDocument 401 /seshat/v1/index.php?error=401
+ErrorDocument 403 /seshat/v1/index.php?error=403
+ErrorDocument 404 /seshat/v1/index.php?error=404
+ErrorDocument 500 /seshat/v1/index.php?error=500
+
+

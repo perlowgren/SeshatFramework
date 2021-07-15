@@ -1,0 +1,317 @@
+
+@font-face {
+	font-family: 'StellaMatutinaHebrew';
+	src: url('/font/StellaMatutinaHebrew.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('/font/StellaMatutinaHebrew.woff2') format('woff2'), /* Super Modern Browsers */
+	     url('/font/StellaMatutinaHebrew.woff') format('woff'), /* Pretty Modern Browsers */
+	     url('/font/StellaMatutinaHebrew.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('/font/StellaMatutinaHebrew.svg#StellaMatutinaHebrew') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'StellaMatutina';
+	src: url('/font/StellaMatutina.eot'); /* IE9 Compat Modes */
+	src: url('/font/StellaMatutina.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('/font/StellaMatutina.woff2') format('woff2'), /* Super Modern Browsers */
+	     url('/font/StellaMatutina.woff') format('woff'), /* Pretty Modern Browsers */
+	     url('/font/StellaMatutina.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('/font/StellaMatutina.svg#StellaMatutina') format('svg'); /* Legacy iOS */
+}
+
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+	display: block; 
+}
+
+html,
+body,
+table,
+th,
+td,
+div {
+	padding: 0;
+}
+
+i { font-style: italic; }
+
+b { font-weight: bold; }
+
+img,
+a img {
+	border: none;
+	vertical-align: middle;
+}
+
+table {
+	display: table;
+	table-layout: auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: none;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+table.full {
+	width: 100%;
+}
+
+tr {
+	display: table-row;
+}
+
+th,
+td {
+	display: table-cell;
+	text-align: left;
+}
+
+form {
+	margin: 0;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+form > nav {
+	margin: 0 0 2px 0;
+	padding: 2px;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	background-color: #eee;
+}
+form > nav::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+form > nav:last-child {
+	margin: 2px 0 0 0;
+}
+
+form > nav > button,
+form > nav > input[type="button"],
+form > nav > input[type="submit"],
+form > nav > a,
+form > nav > div > a {
+	display: inline-block;
+	font: bold 12px/14px Arial;
+	text-decoration: none;
+	margin: 0;
+	padding: 3px 12px;
+	color: white;
+	background-color: #33c;
+	border: solid 1px #666;
+	border-radius: 3px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-webkit-box-sizing: content-box;
+	   -moz-box-sizing: content-box;
+	        box-sizing: content-box;
+}
+
+form > nav > button:hover,
+form > nav > input[type="button"]:hover,
+form > nav > input[type="submit"]:hover,
+form > nav > a:hover,
+form > nav > div > a:hover,
+form > nav > a:focus,
+form > nav > div > a:focus {
+	color: white;
+	background-color: #33f;
+	border: solid 1px #777;
+	text-decoration: none;
+	outline: none;
+}
+form > nav > button:active,
+form > nav > input[type="button"]:active,
+form > nav > input[type="submit"]:active,
+form > nav > a:active,
+form > nav > div > a:active {
+	color: lightgrey;
+	border: solid 1px #555;
+	-webkit-box-shadow: 0 1px 0 rgba(127, 127, 127, 0.5) inset;
+	   -moz-box-shadow: 0 1px 0 rgba(127, 127, 127, 0.5) inset;
+	        box-shadow: 0 1px 0 rgba(127, 127, 127, 0.5) inset;
+}
+form > nav > div > a::after {
+	content: ' \25BC';
+}
+
+form > nav > div {
+	position: relative;
+}
+form > nav > div > a {
+	display: block;
+}
+
+form > nav ul {
+	display: none;
+	position: absolute;
+	z-index: 999;
+	border: solid 1px #666;
+	background-color: #eee;
+	border-radius: 3px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	margin: 1px 0 0 0;
+	padding: 3px;
+	min-width: 120px;
+}
+
+form > nav li {
+	display: block;
+}
+
+form > nav li > a {
+	display: block;
+	white-space: nowrap;
+	color: #000;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+form > nav li > a:hover {
+	color: #000;
+	background-color: #ddd;
+	text-decoration: none;
+}
+
+form > nav li > hr {
+	margin: 2px 0;
+	border-top: 1px solid #666;
+}
+
+form > nav .left {
+	margin: 0 2px 0 0;
+}
+form > nav .right {
+	margin: 0 0 0 2px;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+.button {
+	display: inline-block;
+	font: bold 11px/13px Arial;
+	text-decoration: none;
+	margin: 0;
+	padding: 3px 12px;
+	color: #333;
+	background-color: #ddd;
+	border: solid 1px #666;
+	border-radius: 3px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+	-webkit-box-sizing: content-box;
+	   -moz-box-sizing: content-box;
+	        box-sizing: content-box;
+}
+
+.button:hover {
+	color: #000;
+	background-color: #eee;
+	border: solid 1px #777;
+	text-decoration: none;
+}
+
+.button:focus { outline: none; }
+.button:active {
+	color: #666;
+	background-color: #ccc;
+	border: solid 1px #555;
+}
+.button:-moz-focus-inner { border: 0; }
+
+.expanding-textarea {
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+.expanding-textarea > div {
+	position: relative;
+	margin: 3px;
+	padding: 0;
+}
+.expanding-textarea textarea,
+.expanding-textarea pre {
+	font: normal 12px "Lucida Console",Monaco,monospace; /*Verdana,Helvetica,Sans-Serif;*/
+	background: transparent;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	border-radius: 0;
+	overflow: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	width: 100%;
+	min-height: 50px;
+}
+
+.expanding-textarea textarea {
+	width: 100%;
+}
+.expanding-textarea.active textarea {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	resize: none;
+}
+.expanding-textarea pre {
+	display: none;
+}
+.expanding-textarea.active pre {
+	display: block;
+	visibility: hidden;
+}
+
+
+s.hebrew {
+	font-family: 'StellaMatutinaHebrew';
+	font-style: inherit;
+	font-weight: inherit;
+	text-decoration: inherit;
+	letter-spacing: 0.05em;
+	line-height: 1em;
+	word-wrap: break-word;
+}
+
+s.astrology,
+s.alchemy,
+s.element,
+s.enochian,
+s.geomancy,
+s.i-ching,
+s.symbol,
+s.tarot {
+	font-family: "StellaMatutina";
+	font-style: inherit;
+	font-weight: inherit;
+	text-decoration: inherit;
+	line-height: 1em;
+	word-wrap: break-word;
+}
+
+s.enochian {
+	letter-spacing: 0.075em;
+}

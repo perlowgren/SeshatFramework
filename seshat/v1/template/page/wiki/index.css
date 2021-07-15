@@ -1,0 +1,161 @@
+{*/*
+Seshat Wiki css
+*/}<?php
+
+if($wiki->hasWritePermission()) {
+?>
+
+#wiki-edit-button {
+	position: absolute;
+	right: 7px;
+	top: 5px;
+	font: bold 11px/13px Arial;
+	padding: 3px 6px;
+}
+
+<?php
+
+	if($wiki->getAction()=='edit') {
+?>
+#wiki-edit-form {
+
+}
+
+#wiki-edit-name {
+	background-color: white;
+	border: solid 1px #666;
+	border-radius: 3px;
+	margin-bottom: 2px;
+	padding: 2px;
+}
+
+#wiki-edit-name input {
+	border: none;
+	background: transparent;
+	font-size: 1.2em;
+	display: block;
+	width: 100%;
+}
+
+#wiki-edit-name input:focus {
+	border: none;
+	background: transparent;
+	outline: none;
+}
+
+#wiki-edit-file {
+	background-color: #fd9;
+	border: dotted 2px #960;
+	border-radius: 3px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	padding: 0;
+	margin-bottom: 2px;
+}
+
+#wiki-edit-file-image {
+	max-width: 600px;
+	max-height: 600px;
+	width: auto;
+	height: auto;
+	margin: 0 auto 2px;
+}
+
+#wiki-edit-file-info {
+	text-align: center;
+}
+
+#wiki-edit-page-info {
+	font: bold 11px/13px Arial;
+}
+
+textarea {
+	font: normal 12px "Lucida Console",Monaco,monospace; /*Verdana,Helvetica,Sans-Serif;*/
+	width: 100%;
+	background-color: white;
+	border: solid 1px #666;
+	border-radius: 3px;
+	min-height: 200px;
+	margin: 0;
+	padding: 3px;
+}
+
+.expanding-textarea {
+	background-color: white;
+	border: solid 1px #666;
+	border-radius: 3px;
+}
+.expanding-textarea textarea,
+.expanding-textarea pre {
+	min-height: 200px;
+}
+
+#wiki-message {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.wiki-message {
+	text-align: center;
+	position: relative;
+	margin-bottom: 2px;
+	padding: 5px;
+	border: solid 1px #666;
+	border-radius: 3px;
+}
+
+.wiki-message.info {
+	color: white;
+	border: solid 1px white;
+	background-color: blue;
+}
+
+.wiki-message.success {
+	font-size: 1.2em;
+	border: solid 1px #6f6;
+	background-color: #cfc;
+}
+
+.wiki-message.fail {
+	font-size: 1.2em;
+	border: solid 1px #c66;
+	background-color: #fcc;
+}
+
+#wiki-preview {
+	display: none;
+	margin-top: 3px;
+	padding-top: 2px;
+}
+
+#wiki-preview-body {
+	position: relative;
+	padding: 5px;
+	border: solid 1px #666;
+	border-radius: 3px;
+	min-height: 50px;
+}
+
+#wiki-preview-close {
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	font: bold 11px/13px Arial;
+	padding: 3px 6px;
+}
+
+#wiki-preview-content {
+}
+#wiki-preview-content::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+<?php
+	}
+}
+
+?>

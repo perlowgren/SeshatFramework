@@ -1,0 +1,54 @@
+
+form label {
+	display: block;
+	clear: both;
+	font-size: 120%;
+	font-weight: bold;
+	line-height: 1.7em;
+}
+
+form input[type="text"] {
+	display: block;
+	width: 100%;
+	font: normal 14px Sans-Serif;
+	background-color: white;
+	border: solid 1px #666;
+	border-radius: 3px;
+	margin: 0;
+	padding: 5px;
+}
+
+textarea {
+	font: normal 12px "Lucida Console",Monaco,monospace; /*Verdana,Helvetica,Sans-Serif;*/
+	width: 100%;
+	background-color: white;
+	border: solid 1px #666;
+	border-radius: 3px;
+	min-height: 50px;
+	margin: 0;
+	padding: 3px;
+}
+
+.expanding-textarea {
+	background-color: white;
+	border: solid 1px #666;
+	border-radius: 3px;
+}
+.expanding-textarea textarea,
+.expanding-textarea pre {
+	min-height: 50px;
+}
+
+dt {
+	margin: 0;
+	padding: 0.35em;
+	border: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-radius: 3px;
+	background-color: #eee;
+}
+dd {
+	margin: 0.5em 0 1.4em 0;
+	padding: 0;
+}
+

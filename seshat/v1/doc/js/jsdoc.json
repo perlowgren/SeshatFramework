@@ -1,0 +1,39 @@
+/*
+Configurations script for JsDoc
+
+Install JsDoc & NodeJs:
+$ sudo apt-get install npm
+$ sudo ln -s /usr/bin/nodejs /usr/bin/node
+$ npm install jsdoc@"<=3.3.0" -g
+
+Run JsDoc from /data:
+$ jsdoc -c ./jsdoc.json
+*/
+
+{
+	"tags": {
+		"allowUnknownTags": true,
+		"dictionaries": ["jsdoc","closure"]
+	},
+	"source": {
+		"include": [
+			"../../resource/seshat-1.1.js",
+			"../../resource/seshat-login-1.1.js",
+			"../../resource/seshat-qrcode-1.1.js",
+			"../../resource/seshat-ui-1.1.js"
+		],
+		"exclude": [],
+		"includePattern": ".+\\.js(doc)?$",
+		"excludePattern": "(^|\\/|\\\\)_"
+	},
+	"plugins": ["plugins/markdown"],
+	"templates": {
+	},
+	"opts": {
+		"encoding": "utf8",            // same as -e utf8
+		"destination": "./jsdoc/",     // same as -d ./out/
+		"recurse": true,               // same as -r
+		"tutorials": "./tutorials"     // same as -u path/to/tutorials
+	}
+}
+

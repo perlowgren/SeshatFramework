@@ -1,0 +1,17 @@
+
+
+pre.sh { 
+	padding: 0.4em;
+	color: #000;
+}
+pre.sh span.nr { color:#c60; } /* Number */
+pre.sh span.str { color:#606; } /* String */
+pre.sh span.c { color:#090; } /* Comment */
+pre.sh span.kw { color:#06c; } /* Keyword */
+pre.sh span.func { color:#00c; } /* Function */
+pre.sh span.def { color:#099; } /* Define */
+pre.sh span.var { color:#930; } /* Variable */
+pre.sh span.op { color:#660; } /* Operator */
+pre.sh span.id { color:#633; } /* Identifier */
+
+

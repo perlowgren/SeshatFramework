@@ -1,0 +1,120 @@
+
+form label {
+	display: block;
+	clear: both;
+	font-size: 120%;
+	font-weight: bold;
+	line-height: 1.7em;
+}
+
+form input[type="text"] {
+	display: block;
+	width: 100%;
+	font: normal 14px Sans-Serif;
+	background-color: white;
+	border: solid 1px #666;
+	border-radius: 3px;
+	margin: 0;
+	padding: 5px;
+}
+
+fieldset {
+	border: 1px solid #fdb;
+	border-radius: 3px;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+fieldset label {
+	display: block;
+	float: left;
+}
+
+fieldset input[type="text"] {
+	width: calc(100% - 100px);
+	float: right;
+	margin: 2px 0;
+}
+
+fieldset label[for="cc"] {
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 20px;
+}
+
+fieldset input[type="checkbox"] {
+	margin: 0 5px 0 100px;
+	vertical-align: text-bottom;
+}
+
+form textarea {
+	position: static;
+	font: normal 12px "Lucida Console",Monaco,monospace; /*Verdana,Helvetica,Sans-Serif;*/
+	width: 100%;
+	background-color: white;
+	border: solid 1px #666;
+	border-radius: 3px;
+	min-height: 200px;
+	margin: 0;
+	padding: 3px;
+}
+
+form p {
+	display: block;
+	font-size: 10px;
+	color: #963;
+	background-color: #fdb;
+	border: 1px solid #fb7;
+	border-radius: 3px;
+	margin: 1px 0;
+	padding: 2px;
+}
+
+form p a {
+	font: inherit;
+}
+
+.expanding-textarea {
+	background-color: white;
+	border: solid 1px #666;
+	border-radius: 3px;
+}
+.expanding-textarea textarea,
+.expanding-textarea pre {
+	min-height: 200px;
+}
+
+#contact-message {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.contact-message {
+	text-align: center;
+	position: relative;
+	margin-bottom: 2px;
+	padding: 5px;
+	border: solid 1px #666;
+	border-radius: 3px;
+}
+
+.contact-message.info {
+	color: white;
+	border: solid 1px white;
+	background-color: blue;
+}
+
+.contact-message.success {
+	font-size: 1.2em;
+	border: solid 1px #6f6;
+	background-color: #cfc;
+}
+
+.contact-message.fail {
+	font-size: 1.2em;
+	border: solid 1px #c66;
+	background-color: #fcc;
+}
+
+

@@ -1,0 +1,71 @@
+
+
+Seshat framework is organised into a defined set of directories:
+
+/.data                      Generated data directory (read/write/execute; private) (required)
+/.data/cache                Cache of exported template pages
+/.data/wiki                 Store of saved wiki pages
+/ajax                       Ajax scripts (read/write/execute; public) (required)
+/include                    Included PHP scripts (read/execute; private) (required)
+                            Directory contains library function scripts, classes are loaded with include as base
+/include/Seshat             Seshat classes
+/plugin                     Plugins (read/execute; public) (required)
+/resource                   Resource files such as images and documents (read/write; public) (required)
+/template                   Templates directory (read; private) (required)
+/template/page              Templates for pages
+/test                       Test scripts (read/write/execute; public)
+/doc                        Documentation files (read; public) (required)
+/doc/email                  Email files (read; public) (required)
+/doc/wiki                   Wiki pages (read; public) (required)
+
+
+Many "bulky" functions that rarely are used, have been moved outside classes to
+dedicated scripts in /include that are loaded when needed. This include installation
+of the database, which earlier was inside the classes, even the SQL - which was
+unnecessary code to parse.
+
+Library scripts (replace '*' with two letter language codes):
+
+/include/email.php          Contains the function send_email() for sending emails
+/include/email-*.php        Standard email templates (not Seshat templates)
+/include/http.php           HTTP status headers
+/include/install-db.php     Install the Seshat database tables
+/include/seshat-conf.php    Seshat framework configurations (edit this script and adjust values)
+/include/seshat-*.php       Language text strings used internally by Seshat classes
+
+
+Ajax scripts:
+
+/ajax/login-fb.php          Uses the Facebook SDK to request user email address and login, or if missing insert a new user
+/ajax/session.php           Handle various session requests, including login, logout etc.
+/ajax/user-stats.php        Send user statistics
+/ajax/wiki-load-file.php    
+/ajax/wiki-load-text.php    Load a wiki page text unformatted and send as is (not JSON)
+/ajax/wiki-page.php         Send wiki page info
+/ajax/wiki-preview.php      Format text from 'php://input' and send back
+/ajax/wiki-save.php         Save text from 'php://input'
+/ajax/wiki-upload.php       Save base64 encoded data from 'php://input' to file
+
+
+Templates:
+
+
+
+
+How to install and setup Seshat framework:
+
+TODO
+
+
+How to extend Seshat framework:
+
+TODO
+
+
+How to create plugins:
+
+TODO
+
+
+
+

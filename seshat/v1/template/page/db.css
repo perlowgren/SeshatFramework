@@ -1,0 +1,70 @@
+
+#sql-form {
+
+}
+
+textarea {
+	font: normal 12px "Lucida Console",Monaco,monospace; /*Verdana,Helvetica,Sans-Serif;*/
+	width: 100%;
+	background-color: white;
+	border: solid 1px #666;
+	border-radius: 3px;
+	min-height: 50px;
+	margin: 0;
+	padding: 3px;
+}
+
+.expanding-textarea {
+	background-color: white;
+	border: solid 1px #666;
+	border-radius: 3px;
+}
+.expanding-textarea textarea,
+.expanding-textarea pre {
+	min-height: 50px;
+}
+
+.sql-table {
+	background-color: white;
+	border-collapse: separate;
+	border-spacing: 0;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	display: block;
+	overflow-x: auto;
+}
+
+.sql-table caption {
+	font-weight: bold;
+	text-align: center;
+	padding: 0.2em;
+	font-size: 105%;
+	border: solid 1px #ccc;
+}
+
+.sql-table tr:hover {
+	background-color: #eee;
+}
+
+.sql-table th {
+	font-weight: bold;
+	padding: 0.35em;
+	border: solid 1px #ccc;
+	background-color: #ddd;
+	vertical-align: top;
+}
+
+.sql-table td {
+	padding: 0.35em;
+	border: solid 1px #ccc;
+	vertical-align: top;
+}
+
+#sql-tables {
+	width: 100%;
+}
+
+#sql-tables .button {
+	margin: 1px 2px;
+}
+
